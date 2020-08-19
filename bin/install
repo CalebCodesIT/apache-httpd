@@ -1,0 +1,11 @@
+#!/bin/bash
+dnf -y install httpd
+systemctl enable httpd
+systemctl start httpd
+firewall-cmd --zone=public --permanent --add-service=http
+firewall-cmd --reload
+
+# webroot
+#/var/www/html/index.html
+
+# ln /home/caleb/www -> /var/www/html
