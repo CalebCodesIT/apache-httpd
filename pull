@@ -19,6 +19,8 @@ fi
 REPO_DIR=$HOME/repos
 REPO=apache-httpd
 
+. $REPO_DIR/github/bin/git-config
+
 # ---
 clear
 pushd .
